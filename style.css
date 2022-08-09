@@ -66,7 +66,7 @@
     margin-bottom: 30px;
 }
 
-.container main .content p{
+.container main .content > p{
     color: white;
     font-family: var(--fontText);
     margin-bottom: 30px;
@@ -99,7 +99,7 @@ footer{
 }
 
 
-footer a{
+footer > a{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -110,17 +110,17 @@ footer a{
     margin-right: 15px;
 }
 
-footer a .facebook-icon{
+footer > a .facebook-icon{
     width: 12px;
     fill: white;
 }
 
-footer a .twitter-icon,a .instagram-icon{
+footer > a .twitter-icon,a .instagram-icon{
     width: 20px;
     fill: white;
 }
 
-footer a:hover, a:hover > svg{
+footer > a:hover, a:hover > svg{
     border-color: hsl(300, 93%, 62%);
     fill: hsl(300, 93%, 62%);
 }
@@ -176,32 +176,3 @@ footer a:hover, a:hover > svg{
         padding-right: 0;
     }
 }
-
-
-
-/*footer{
-    display: flex;
-    font-family: var(--font);
-    width: 100vw;
-    height: 5vh;
-    font-size: 14px;
-    background-color: white;
-    align-items: center;
-    justify-content: center;
-}
-
-footer p{
-    text-align: center;
-}
-
-footer a{
-    font-weight: bold;
-    color: black;
-    text-shadow: 1px 0.5px 0px #eb1491;
-    text-decoration: none;
-}
-
-footer span{
-    font-size: 2.5em;
-    padding: 0 0 10px 15px;
-}*/
