@@ -16,7 +16,7 @@
     --fontText: 'Open Sans', sans-serif;
 }
 
-.container{
+body{
     width: 100vw;
     height: 100vh;
     background-color: var(--violet);
@@ -26,16 +26,16 @@
     
 }
 
-.container header{
+header{
     height: 20vh;
     padding: 60px 0 0 60px;
 }
 
-.container header a img{
+header a img{
     width: 200px;
 }
 
-.container main{
+main{
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -43,13 +43,13 @@
     padding: 0 60px;
 }
 
-.container main img{
+main img{
     width: 750px;
     min-width: 550px;
     margin-right: 40px;
 }
 
-.container main .content{
+main .content{
     display: flex;
     flex-direction: column;
     width: 30%;
@@ -57,7 +57,7 @@
     padding-top: 40px;
 }
 
-.container main .content h1{
+main .content h1{
     color: white;
     font-family: var(--fontHeadings);
     font-weight: 600;
@@ -66,13 +66,13 @@
     margin-bottom: 30px;
 }
 
-.container main .content > p{
+main .content > p{
     color: white;
     font-family: var(--fontText);
     margin-bottom: 30px;
 }
 
-.container main .content button{
+main .content button{
     background-color: white;
     color: var(--violet);
     font-family: var(--fontHeadings);
@@ -84,7 +84,7 @@
     box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-.container main button:hover{
+main button:hover{
     cursor: pointer;
     background-color: var(--softMagenta);
     color: white;
@@ -126,17 +126,18 @@ footer > a:hover, a:hover > svg{
 }
 
 @media(max-width: 1000px){
-    .container{
+    body{
         background-image: url('images/bg-mobile.svg');
-        background-size: contain;
+        background-size: 100%;
     }
 
-    .container header{
+    header{
         padding-top: 40px;
         padding-left: 40px;
+        transition: 0.3s;
     }
 
-    .container main{
+    main{
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -144,35 +145,40 @@ footer > a:hover, a:hover > svg{
         padding-left: 0;
     }
 
-    .container main img{
+    main img{
         width: 400px;
         min-width: 400px;
         height: 285px;
         margin-right: 0;
     }
 
-    .container main .content{
+    main .content{
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: 0.3s;
 
     }
 
-    .container main .content h1{
+    main .content h1{
         font-size: 1.9em;
         text-align: center;
+        transition: 0.3s;
     }
 
-    .container main .content p{
+    main .content p{
         text-align: center;
+        transition: 0.3s;
     }
 
-    .container main .content button{
+    main .content button{
         width: 300px;
+        transition: 0.3s;
     }
 
     footer{
         justify-content: center;
         padding-right: 0;
+        transition: 0.3s;
     }
 }
